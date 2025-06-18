@@ -1,0 +1,51 @@
+Laravel - Framework - PHP
+(N Libraries)
+
+
+Composer (package PHP, version)
+
+composer require tenthuvien version
+composer require carbon/carbon 3.*
+composer req carbon/carbon 5.*
+
+composer remove tenthuvien
+composer rm tenthuvien
+
+composer.json (N library (version)),
+composer.lock (history)
+
+composer install
+composer update
+composer update tenthuvien version
+
+vendor
+
+.env.example
+.env.example -> .env -> enviroment
+
+php artisan key:generate
+
+php artisan migrate
+
+php artisan serve
+
+CLI command line interface
+
+OS
+Operation System
+
+MacOS
+
+ubuntu -> Linux
+
+https://github.com/nguyenlyhuuphuc/DF-FIT-2D002
+
+?url=product/detail/3
+?url=product_category/create
+
+Closure
+
+Arrow
+
+
+http://localhost:8000/abc/
