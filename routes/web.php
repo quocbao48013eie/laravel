@@ -4,11 +4,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     // echo 'welcome';
-    // return view('welcome');
+    return view('welcome');
 
-    $name = 'Le Van Test';
+    // $name = 'Le Van Test';
 
-    return view('abc/xyz/ffff/a', ['name' => $name]);
+    // return view('abc/xyz/ffff/a', ['name' => $name]);
 });
 
 Route::get('test', function() {
@@ -34,4 +34,41 @@ Route::get('ten/{ten?}/tuoi/{tuoi?}', function($name ='unknow', $age = 1){
 
 Route::get('test/{test?}', function ($test = 'null'){
     echo $test;
+});
+
+Route::get('scores', function(){
+    return view('scores.scores');
+});
+
+Route::get('scores_blade', function(){
+    return view('scores.scores_blade');
+});
+
+Route::get('php', function(){
+    return view('template.php');
+});
+Route::get('html', function(){
+    return view('template.html');
+});
+Route::get('css', function(){
+    return view('template.css');
+});
+Route::get('about-us', function(){
+    return view('template.about-us');
+});
+Route::get('home', function(){
+    return view('template.home');
+});
+Route::get('layout-master', function(){
+    return view('layout.master');
+});
+
+Route::get('client/layout-master', function (){
+    return view('client.layout.master');
+});
+Route::get('client/home', function (){
+    return view('client.pages.home');
+});
+Route::get('client/about', function (){
+    return view('client.pages.about');
 });
