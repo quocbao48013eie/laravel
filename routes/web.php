@@ -72,3 +72,19 @@ Route::get('client/home', function (){
 Route::get('client/about', function (){
     return view('client.pages.about');
 });
+
+Route::get('admin/layout', function (){
+    return view('admin.layout.master');
+});
+
+Route::get('admin/home', function (){
+    return view('admin.pages.home');
+});
+
+Route::get('admin/product_category/create', function (){
+    return view('admin.pages.product_category.create');
+});
+
+Route::get('admin/product_category/list', function (){
+    return view('admin.pages.product_category.list');
+});
