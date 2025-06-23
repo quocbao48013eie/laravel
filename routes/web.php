@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\ProductCategoryController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -81,10 +83,13 @@ Route::get('admin/home', function (){
     return view('admin.pages.home');
 });
 
-Route::get('admin/product_category/create', function (){
-    return view('admin.pages.product_category.create');
-});
+
 
 Route::get('admin/product_category/list', function (){
     return view('admin.pages.product_category.list');
 });
+
+//use Illuminate\Http\Request;
+Route::post('admin/product_category/store', [ProductCategoryController::class, 'store'])->name('admin.product_category.store');
+
+Route::get('admin/product_category/create', [ProductCategoryController::class, 'create'])->name('admin.product_category.create');

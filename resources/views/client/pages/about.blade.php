@@ -29,7 +29,6 @@
 </header>
 @endsection
 
-
 @section('my-script')
     <script>alert('myscript')</script>
 @endsection
